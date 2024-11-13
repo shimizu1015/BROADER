@@ -1,0 +1,27 @@
+export type RootStackParamList = {
+  Welcome: undefined;
+  TermsOfServiceModal: undefined;
+  // Signin: undefined;
+  CreateAccount: undefined;
+  Signin: { expoPushToken: string };
+  // CreateAccount: { expoPushToken?: string | undefined };
+  AccountCreated: undefined;
+  Confirmation: undefined;
+  ProfileSetup: { userId: string };
+  Top: { userId?: string };
+  QRCodeComponent: undefined;
+  SearchUser: undefined;
+  ImageUploadPage: { userId: string };
+  Social: { userId: string };
+  ChatList: undefined;
+  ChatRoom: { chatRoomId: string; chatRoomTitle: string; activeTab: 'group' | 'personal';hostUserId?: string;receiverUserId?: string; };
+  EventList: undefined;
+  alert: undefined;
+  UserPage: undefined;
+  ProfileEdit: { userId: string };
+  TalkScreen: undefined;
+  TermsOfServiceScreen: undefined; 
+  SetHobbies: { isEdit: boolean };
+  CreateArticleScreen:undefined;
+  ArticleDetail: { articleId: string };
+};

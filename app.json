@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "expo-test",
+    "slug": "broader",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo2_qr.png",
+    "userInterfaceStyle": "light",
+    "extra": {
+      "eas": {
+        "projectId": "16d32224-c620-4a09-aa22-7e0765cf8fde"
+      }
+    },
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#EF526D"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.BROADER.BROADER",
+      "notification":{
+        "icon": "./assets/logo2_qr.png"
+
+      },
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "fetch",
+          "remote-notification"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-notifications"
+    ],
+    "notification": {
+      "iosDisplayInForeground": true
+    },
+    "owner": "broader"
+  }
+}
